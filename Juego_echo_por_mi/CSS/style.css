@@ -1,0 +1,55 @@
+body
+{
+    border: 0ch;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 240, 225);
+}
+
+.navegador
+{
+    border: 0ch;
+    display:flex;
+    height: 5em;
+    border:solid  1px;
+
+}
+.container
+ {
+
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+  }
+.tesoroButton
+{
+    height: 100%;
+    display:grid;
+}
+.minas
+{
+    height: 100%;
+    display: grid;
+}
+
+.tesoro
+{
+    border: solid 1px;
+    display: flex;
+    position:relative;
+
+
+}
+
+.tesoro h1
+{
+    display: block;
+    block-size: auto;
+}
+
+.celda
+{
+    height: 1em;
+    width: 1em;
+    background-color: blanchedalmond;
+}

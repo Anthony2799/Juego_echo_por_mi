@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <title>Primer juego</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css">
+     <!--<link rel="stylesheet" href="../CSS/nav.css"-->
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"-->
+    <script type="text/javascript" src="../JS/logic.js" ></script>
+    <script type="text/javascript" src="../JS/Cambio.js"></script>
+    
+</head>
+<body>
+    <div id="container" class="container">
+    <!-- Navegador entre juegos-->
+    <nav class="navegador">
+        <div class="tesoroButton">
+            <input type="button" value="Buscar el tesoro" onclick="aparecerSearch()">
+        </div>
+        
+        <div class="minas">
+            <input type="button" value="Busca minas" onclick="aparecerMine()">
+        </div>
+
+    </nav>
+<!-- buscar el tesoro-->
+        <div id="searchForTreasure" class="tesoro" display="none">
+                <h1>Busca el tesoro</h1>
+            <img src="../IMG/treasuremap.png" width="400" height="400" id="map" draggable="false">
+                <p id="distance"></p>
+            <script src="../JS/helper.js"></script>
+            <script src="../JS/Game.js"></script>
+        </div>
+<!--buscar las minas-->
+        <div id="searchMine" class="boom" display="none">
+        <form id="MineBox">
+                <label for="columnas"> Cantidad de columnas:<input type="number" id="columnas" value="Columnas"></input></label>
+            <br>
+                <label for="Filas"> Cantidad de filas:<input type="number" id="Filas" value="Filas"></input></label>
+            <br>
+                <label for="Minas"> Cantidad de minas:<input type="number" id="Minas" value="Minas"></input></label>
+        </form>
+        
+        <table class="tablero">
+            <tr>
+                <td>
+                    <div class="celda">
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+    
+-->
